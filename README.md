@@ -27,3 +27,15 @@ curl -fsSL https://raw.githubusercontent.com/Bajenov/mac-apps/main/install.sh | 
 ```
 
 Обе программы живут значком в строке меню справа сверху, в Доке их нет. Обновить — та же строка ещё раз.
+
+## Исходный код
+
+Код обеих программ открыт по лицензии MIT (файл `LICENSE`): папки `snimok/` и `pulse/`.
+Написаны на Swift, без сторонних библиотек — только то, что есть в macOS.
+
+Собрать самому (нужны инструменты разработчика: `xcode-select --install`):
+
+```
+cd snimok && ./build.sh    # → /Applications/Snimok.app
+cd pulse  && ./build.sh    # → /Applications/Pulse.app
+```
